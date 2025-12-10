@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorTheme": "Winter is Coming (Dark Black)",
+    "workbench.iconTheme": "vscode-icons",
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.python",
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'Cascadia Code', 'Courier New', monospace"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "github.copilot",
+      "github.copilot-chat",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "ms-vscode-remote.remote-containers",
+      "vscode-icons-team.vscode-icons"
+    ]
+  }
+}
