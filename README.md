@@ -46,7 +46,40 @@ This is a dedicated VS Code workspace configured for AI agentic development and 
 1. Open this workspace with: `code agentic-workspace.code-workspace`
 2. Install recommended extensions when prompted
 3. Configure your AI tools (Copilot, API keys, etc.)
-4. Start building agentic applications!
+4. Explore the project structure: `cat PROJECT_STRUCTURE.md`
+5. Start building agentic applications!
+
+## Quick Navigation
+
+**Framework & Examples:**
+- 📚 [Framework Documentation](src/collaboration/FRAMEWORK_DOCUMENTATION.md) - Complete API reference
+- 🔄 [Example Workflows](src/collaboration/example_workflows.py) - Real-world scenarios
+- ✅ [Completion Summary](ISSUE_1_COMPLETION_SUMMARY.md) - Phase status
+
+**Agent Roles & Instructions:**
+- 👨‍💻 [Development Setup](agents/AGENT_INSTRUCTIONS.md)
+- 🔍 [Code Review](agents/AGENT_CODE_REVIEW.md)
+- 🎨 [Design Patterns](agents/AGENT_DESIGN.md)
+- 🚀 [DevOps & Deployment](agents/AGENT_DEVOPS.md)
+- 📊 [Product Strategy](agents/AGENT_PRODUCT_OWNER.md)
+- 👥 [Team Coordination](agents/AGENT_PROJECT_LEADER.md)
+
+**Setup & Configuration:**
+- 🔐 [SSH GitHub Authentication](docs/SSH_GITHUB_AUTH_SETUP.md)
+- 📋 [Configuration Guide](configs/README.md)
+
+## Project Structure
+
+See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for comprehensive directory overview.
+
+**Key Directories:**
+- `src/collaboration/` - Core framework (4,000+ LOC, production-ready)
+- `agents/` - Agent implementations and role instructions
+- `tools/` - Tool definitions and utilities
+- `configs/` - Configuration management
+- `notebooks/` - Jupyter notebooks for exploration
+- `docs/` - Documentation and guides
+- `tests/` - Unit and integration tests
 
 ## VS Code Profiles
 
