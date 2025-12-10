@@ -1,0 +1,10 @@
+# Example agentic project structure
+# This is a template for organizing agentic applications
+
+# Create your project directories as needed:
+# agents/          - Agent implementations
+# tools/           - Tool definitions and utilities
+# configs/         - Configuration files
+# notebooks/       - Jupyter notebooks for exploration
+# tests/           - Unit and integration tests
+# docs/            - Documentation
