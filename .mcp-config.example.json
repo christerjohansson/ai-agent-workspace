@@ -1,0 +1,70 @@
+{
+  "mcp_servers": {
+    "github": {
+      "enabled": true,
+      "type": "github",
+      "auth": {
+        "token": "${GITHUB_TOKEN}",
+        "method": "oauth"
+      },
+      "api_version": "v3"
+    },
+    "postgresql": {
+      "enabled": false,
+      "type": "postgresql",
+      "connections": [
+        {
+          "name": "dev_db",
+          "host": "${DB_HOST}",
+          "port": 5432,
+          "database": "${DB_NAME}",
+          "user": "${DB_USER}",
+          "password": "${DB_PASSWORD}",
+          "ssl": true,
+          "timeout": 30
+        },
+        {
+          "name": "prod_db",
+          "host": "${PROD_DB_HOST}",
+          "port": 5432,
+          "database": "${PROD_DB_NAME}",
+          "user": "${PROD_DB_USER}",
+          "password": "${PROD_DB_PASSWORD}",
+          "ssl": true,
+          "timeout": 30
+        }
+      ]
+    },
+    "microsoft_docs": {
+      "enabled": true,
+      "type": "microsoft_learn",
+      "cache_enabled": true,
+      "cache_ttl": 3600,
+      "cache_dir": "./cache/microsoft_docs"
+    }
+  },
+  "workspace_settings": {
+    "enable_code_search": true,
+    "enable_issue_integration": true,
+    "enable_database_tools": false,
+    "enable_audit_logging": true,
+    "logging_level": "info",
+    "log_file": "./logs/mcp.log"
+  },
+  "agent_settings": {
+    "message_queue_backend": "redis",
+    "message_queue_host": "${MESSAGE_QUEUE_HOST}",
+    "message_queue_port": 6379,
+    "message_queue_db": 0,
+    "audit_storage": "postgresql",
+    "audit_db_connection": "dev_db"
+  },
+  "collaboration_framework": {
+    "enabled": true,
+    "conflict_resolution_strategy": "majority_vote",
+    "dependency_tracking_enabled": true,
+    "context_versioning_enabled": true,
+    "max_context_size_mb": 100,
+    "message_ttl_seconds": 86400
+  }
+}
